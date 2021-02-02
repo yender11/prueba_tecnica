@@ -11,6 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', function () { return view('welcome');});
+
+
+Route::get('export_products', 'ProductController@exportCsv');
+
+Route::get('productos', 'ProductController@index');

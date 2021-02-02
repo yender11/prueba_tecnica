@@ -8,7 +8,17 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <!-- Styles -->
         <style>
             html, body {
@@ -80,20 +90,24 @@
             @endif
 
             <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                <h3 class="">
+                   Yender Jesus Rodriguez Quijada - Prueba Tecnica-Laravel 
+                </h3>
+              <!--  <div class="title m-b-md">
+                    Yender Rodriguez 
+                </div>-->
+                        <div class="links">
+                   <span data-href="/export_products" id="export" class="btn btn-success btn-sm" onclick="exportProducts(event.target);">Export</span>
                 </div>
             </div>
         </div>
     </body>
+
+
+<script>
+   function exportProducts(_this) {
+      let _url = $(_this).data('href');
+      window.location.href = _url;
+   }
+</script>
 </html>
