@@ -39,8 +39,11 @@ class ProductController extends BaseController
 
 
         $validator = Validator::make($input, [
+            'sku' => 'required',
+            'model' => 'required',
+            'price' => 'required',
             'name' => 'required',
-            'detail' => 'required'
+            'attribute_color' => 'required'
         ]);
 
 
